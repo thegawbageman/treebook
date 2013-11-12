@@ -5,10 +5,26 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
-
-<%= yield %>
-
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<nav class="navbar navbar-inverse navbar-default" role="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="navbar-brand" href="#">Treebook</a>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+ 	
+<div class="container">
+	<%= yield %>
+</div>
 </body>
 </html>
